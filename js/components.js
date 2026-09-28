@@ -32,6 +32,11 @@ async function iniciarComponentes() {
         "aside-container",
         rutaBase + "components/aside.html"
     );
+    
+    await cargarComponente(
+        "singin-container",
+        rutaBase + "components/singin.html"
+    );
 
     // Pasamos las variables de ruta al evento para usarlas en la navegación
     document.dispatchEvent(new CustomEvent("componentesCargados", { 
