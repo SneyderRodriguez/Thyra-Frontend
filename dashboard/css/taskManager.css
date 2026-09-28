@@ -1,34 +1,3 @@
-:root {
-    --coarse-wool: #1A2129;
-    --sleepy-blue: #BCCCCF;
-    --cape-cod-blue: #92A3A6;
-    --night-rendezvous: #65777A;
-    --mount-etna: #3C494D;
-    /* PRIORIDADES */
-    --alta: #9D1024;
-    --media: #D97706;
-    --baja: #92B1D9;
-    /*ESTADOS*/
-    --por-hacer: #C5221F;
-    --en-progreso: #F59E0B;
-    --finalizado: #5B83B6;
-    /* TEXTO */
-    --font-title: "Jaro", sans-serif;
-    --font-text: "Patrick Hand", cursive;
-}
-
-body {
-    margin: 0;
-    font-family: var(--font-text);
-    background-color: var(--coarse-wool);
-    color: var(--sleepy-blue);
-}
-
-main {
-    display: flex;
-    min-height: 100vh;
-}
-
 aside {
     width: 240px;
     background-color: var(--night-rendezvous);
