@@ -34,8 +34,8 @@ async function iniciarComponentes() {
     );
     
     await cargarComponente(
-        "singin-container",
-        rutaBase + "components/singin.html"
+        "signin-container",
+        rutaBase + "components/signin.html"
     );
 
     // Pasamos las variables de ruta al evento para usarlas en la navegación
