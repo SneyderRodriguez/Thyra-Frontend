@@ -1,0 +1,12 @@
+.auth-section {
+    min-height: 100vh;
+}
+
+.auth-section .container {
+    min-height: 100vh;
+    max-width: none;
+}
+
+.auth-page {
+    display: block;
+}
