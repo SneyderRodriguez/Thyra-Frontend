@@ -1,92 +1,79 @@
-<section id="login" class="auth-section">
-    <div>
-        <div>
-            <div>
-                <img src="assets/img/img_signin.jpg" alt="Ilustración de inicio de sesión">
-            </div>
-            <div>
-                <a class="auth-switch" href="#registro" data-auth-view="register">
-                    Registrarse
-                </a>
-                <form>
-                    <div>
-                        <input type="email" id="loginEmail" placeholder="Correo" name="email"
-                            autocomplete="email" required>
-                    </div>
-                    <div>
-                        <input type="password" id="loginPassword" placeholder="Contraseña"
-                            name="password" autocomplete="current-password" required>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="rememberCredentials" name="remember">
-                        <label for="rememberCredentials">
-                            Recordar credenciales
-                        </label>
-                    </div>
-                    <a href="">¿Olvidaste la contraseña?</a>
-                    <button type="submit">
-                        Iniciar sesión
-                    </button>
-                </form>
-            </div>
+<section id="form-login">
+    <div class="login">
+        <div class="auth-image-login">
+            <img src="assets/img/img_signin.jpg" alt="Ilustración de inicio de sesión">
+        </div>
+        <div class="auth-container">
+            <a class="auth-switch" href="#form-register" data-auth-view="register">
+                Registrarse
+            </a>
+            <form>
+                <div class="auth-user">
+                    <input type="email" placeholder="Correo" class="auth-input" name="email" autocomplete="email" required>
+                </div>
+                <div class="auth-password">
+                    <input type="password" placeholder="Contraseña" class="auth-input" name="password" autocomplete="current-password"
+                        required>
+                </div>
+                <div class="auth-remember">
+                    <input type="checkbox" id="rememberCredentials" name="remember">
+                    <label for="rememberCredentials">
+                        Recordar credenciales
+                    </label>
+                </div>
+                <a href="">¿Olvidaste la contraseña?</a>
+                <button type="submit" class="auth-btn">
+                    Iniciar sesión
+                </button>
+            </form>
         </div>
     </div>
 </section>
 
-<section id="registro" class="auth-section">
-    <div>
-        <div>
-            <div>
-                <a class="auth-switch" href="#login" data-auth-view="login">
-                    Iniciar sesión
-                </a>
-                <form>
-                    <div>
-                        <label>
-                            Nombre
-                        </label>
-                        <input type="text" name="name" autocomplete="name"
-                            required>
-                    </div>
-                    <div>
-                        <label>
-                            Correo
-                        </label>
-                        <input type="email" name="email" autocomplete="email"
-                            required>
-                    </div>
-                    <div>
-                        <label>
-                            Contraseña
-                        </label>
-                        <input type="password" name="password"
-                            autocomplete="new-password" required>
-                    </div>
-                    <div>
-                        <label>
-                            Confirmar contraseña
-                        </label>
-                        <input type="password" name="confirmPassword"
-                            autocomplete="new-password" required>
-                    </div>
-                    <div>
-                        <div>
-                            <input type="checkbox" name="terms" required>
-                            <label>
-                                Acepto los términos de servicio y las políticas de privacidad
-                            </label>
-                        </div>
-                    </div>
-                    <div>
-                        <button type="submit">
-                            Registrarse
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <div>
-                <img src="assets/img/img_signin.jpg" alt="Ilustración de registro">
-            </div>
+<section id="form-register">
+    <div class="registro">
+        <div class="auth-container">
+            <a class="auth-switch" href="#form-login" data-auth-view="login">
+                Iniciar sesión
+            </a>
+            <form>
+                <div class="auth-name">
+                    <label for="registerName">
+                        Nombre
+                    </label>
+                    <input type="text" id="registerName" class="auth-input" name="name" autocomplete="name" required>
+                </div>
+                <div class="auth-email">
+                    <label for="registerEmail">
+                        Correo
+                    </label>
+                    <input type="email" id="registerEmail" class="auth-input" name="email" autocomplete="email" required>
+                </div>
+                <div class="auth-password">
+                    <label for="registerPassword">
+                        Contraseña
+                    </label>
+                    <input type="password" id="registerPassword" class="auth-input" name="password" autocomplete="new-password" required>
+                </div>
+                <div class="auth-confirmPassword">
+                    <label for="confirmPassword">
+                        Confirmar contraseña
+                    </label>
+                    <input type="password" id="confirmPassword" class="auth-input" name="confirmPassword" autocomplete="new-password" required>
+                </div>
+                <div class="auth-terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">
+                        Acepto los términos de servicio y las políticas de privacidad
+                    </label>
+                </div>
+                <button type="submit" class="auth-btn">
+                    Registrarse
+                </button>
+            </form>
+        </div>
+        <div class="auth-image-register">
+            <img src="assets/img/img_signin.jpg" alt="Ilustración de registro">
         </div>
     </div>
 </section>

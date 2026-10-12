@@ -7,8 +7,8 @@
     }
 
     function showAuthView(view) {
-        const loginForm = container.querySelector(".form-login");
-        const registerForm = container.querySelector(".form-register");
+        const loginForm = container.getElementById("#form-login");
+        const registerForm = container.getElementById("#form-register");
 
         // Si el componente aún no llegó, no intentamos alternar nada.
         if (!loginForm || !registerForm) {

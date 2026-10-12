@@ -1,0 +1,8 @@
+.auth-input {
+    border: none;
+    outline: none; /* Quita el contorno por defecto */
+    border-radius: 50px;
+    background-color: var(--mount-etna);
+    color: white;
+    padding: 10px 20px;
+}
