@@ -1,94 +1,92 @@
-<main class="auth-page">
-    <section id="login" class="auth-section">
-        <div class="container text-center">
-            <div class="row align-items-center">
-                <div class="col-sm-8 auth-image auth-image-login">
-                    <img src="assets/img/img_signin.jpg" alt="Ilustración de inicio de sesión">
-                </div>
-                <div class="col-sm-4 form-login">
-                    <a class="auth-switch" href="#registro" data-auth-view="register">
-                        Registrarse
-                    </a>
-                    <form>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" id="loginEmail" placeholder="Correo" name="email"
-                                autocomplete="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="password" class="form-control" id="loginPassword" placeholder="Contraseña"
-                                name="password" autocomplete="current-password" required>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="rememberCredentials" name="remember">
-                            <label class="form-check-label" for="rememberCredentials">
-                                Recordar credenciales
-                            </label>
-                        </div>
-                        <a href="">¿Olvidaste la contraseña?</a>
-                        <button type="submit" class="btn btn-primary">
-                            Iniciar sesión
-                        </button>
-                    </form>
-                </div>
+<section id="login" class="auth-section">
+    <div>
+        <div>
+            <div>
+                <img src="assets/img/img_signin.jpg" alt="Ilustración de inicio de sesión">
             </div>
-        </div>
-    </section>
-
-    <section id="registro" class="auth-section">
-        <div class="container text-center">
-            <div class="row align-items-center">
-                <div class="col-sm-4 form-register">
-                    <a class="auth-switch" href="#login" data-auth-view="login">
+            <div>
+                <a class="auth-switch" href="#registro" data-auth-view="register">
+                    Registrarse
+                </a>
+                <form>
+                    <div>
+                        <input type="email" id="loginEmail" placeholder="Correo" name="email"
+                            autocomplete="email" required>
+                    </div>
+                    <div>
+                        <input type="password" id="loginPassword" placeholder="Contraseña"
+                            name="password" autocomplete="current-password" required>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="rememberCredentials" name="remember">
+                        <label for="rememberCredentials">
+                            Recordar credenciales
+                        </label>
+                    </div>
+                    <a href="">¿Olvidaste la contraseña?</a>
+                    <button type="submit">
                         Iniciar sesión
-                    </a>
-                    <form class="row g-3">
-                        <div class="col-12">
-                            <label for="registerName" class="form-label">
-                                Nombre
-                            </label>
-                            <input type="text" class="form-control" id="registerName" name="name" autocomplete="name"
-                                required>
-                        </div>
-                        <div class="col-12">
-                            <label for="registerEmail" class="form-label">
-                                Correo
-                            </label>
-                            <input type="email" class="form-control" id="registerEmail" name="email"
-                                autocomplete="email" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="registerPassword" class="form-label">
-                                Contraseña
-                            </label>
-                            <input type="password" class="form-control" id="registerPassword" name="password"
-                                autocomplete="new-password" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="confirmPassword" class="form-label">
-                                Confirmar contraseña
-                            </label>
-                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
-                                autocomplete="new-password" required>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
-                                <label class="form-check-label" for="terms">
-                                    Acepto los términos de servicio y las políticas de privacidad
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary">
-                                Registrarse
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-sm-8 auth-image auth-image-register">
-                    <img src="assets/img/img_signin.jpg" alt="Ilustración de registro">
-                </div>
+                    </button>
+                </form>
             </div>
         </div>
-    </section>
-</main>
+    </div>
+</section>
+
+<section id="registro" class="auth-section">
+    <div>
+        <div>
+            <div>
+                <a class="auth-switch" href="#login" data-auth-view="login">
+                    Iniciar sesión
+                </a>
+                <form>
+                    <div>
+                        <label>
+                            Nombre
+                        </label>
+                        <input type="text" name="name" autocomplete="name"
+                            required>
+                    </div>
+                    <div>
+                        <label>
+                            Correo
+                        </label>
+                        <input type="email" name="email" autocomplete="email"
+                            required>
+                    </div>
+                    <div>
+                        <label>
+                            Contraseña
+                        </label>
+                        <input type="password" name="password"
+                            autocomplete="new-password" required>
+                    </div>
+                    <div>
+                        <label>
+                            Confirmar contraseña
+                        </label>
+                        <input type="password" name="confirmPassword"
+                            autocomplete="new-password" required>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="checkbox" name="terms" required>
+                            <label>
+                                Acepto los términos de servicio y las políticas de privacidad
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit">
+                            Registrarse
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <img src="assets/img/img_signin.jpg" alt="Ilustración de registro">
+            </div>
+        </div>
+    </div>
+</section>
